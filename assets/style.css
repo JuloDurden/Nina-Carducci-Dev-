@@ -80,14 +80,20 @@ nav a {
 	font-size: 30px;
 }
 .about-me__introduction {
+	margin-top: 0;
+    margin-bottom: 0.5rem;
 	font-family: 'Spectral';
 	font-weight: 800;
-	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.2rem;
 	font-style: italic;
 	width: 60%;
 }
 #about-me p {
 	width: 80%;
+}
+
+#about-me p:last-child {
 	font-size: 14px;
 }
 
@@ -257,7 +263,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h2, #about-me p {
 		width: 100%;
 	}
 }
