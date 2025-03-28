@@ -1,22 +1,55 @@
 <!DOCTYPE html>
-<!-- Rajouter une langue -->
+<!-- Ajout d'une langue -->
 <html lang="fr">
 <head>
-	<!-- Ajouter un title -->
+	<!-- Ajout de la région -->
+	<meta name="language" content="fr-FR">
+	<!-- Ajout d'un title -->
 	<title>Nina Carducci, photographe professionnelle à Bordeaux</title>
-	<!-- Ajouter une description -->
+	<!-- Ajout d'une description -->
 	<meta name="description" content="Nina Carducci, photographe à Bordeaux, capture de son talent et de son expérience les moments les plus importants de votre vie.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<!-- Minification du fichier de style-->
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
+	<!-- Chargement différé des scripts et minification de scripts.js et maugallery.js-->
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" async></script>
 	<script src="./assets/maugallery.min.js" defer></script>
 	<script src="./assets/scripts.min.js" defer></script>
+	<!-- Balises Meta pour les réseaux sociaux -->
+	<meta property="og:site_name" content="Nina Carducci" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://fastidious-semifreddo-25279b.netlify.app/" />
+	<meta property="og:title" content="Nina Carducci, photographe professionnelle à Bordeaux" />
+	<meta property="og:description" content="Nina Carducci, photographe à Bordeaux, capture de son talent et de son expérience les moments les plus importants de votre vie." />
+	<meta property="og:image" content="https://fastidious-semifreddo-25279b.netlify.app/assets/images/nina.webp" />
+	<!-- Microdonnées Schema.org -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci, photographe",
+			"image": "",
+			"url": "https://example.com",
+			"@id": "",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"postalCode": "33200",
+				"addressLocality": "Bordeaux",
+				"addressCountry": "FR"
+		},
+			"telephone": "+33 5 56 67 78 89",
+			"openingHours": "De Lundi à Vendredi 10h-19h"
+		}
+	</script>
+	<!-- Ajout de la balise Meta robots -->
+	<meta name="robots" content="index, follow" />
 </head>
 <body>
 <!-- Passer cette section en <header> -->
@@ -44,13 +77,36 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Photo d'un homme en costume portant un sac et marchant sur un passage piétons">
+					<img
+						src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp"
+						class="d-block w-100" width="1920" height="888" style="max-width: 100%; height: auto;" 
+						alt="Photo d'un homme en costume portant un sac et marchant sur un passage piétons"
+						srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp 1920w,
+							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1280.webp 1280w,
+							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp 768w,
+							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480.webp 480w" sizes="100vw">
 				</div>
 				<div class="carousel-item">
-					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="Photo de personnes participant à un spectacle">
+					<img
+						src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1920.webp"
+						class="d-block w-100" width="1920" height="888" style="max-width: 100%; height: auto;"
+						loading="lazy" 
+						alt="Photo de personnes participant à un spectacle"
+						srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1920.webp 1920w,
+							./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1280.webp 1280w,
+							./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-768.webp 768w,
+							./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-480.webp 480w" sizes="100vw">
 				</div>
 				<div class="carousel-item">
-					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Photo d'un couple qui s'embrasse à leur mariage">
+					<img
+						src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1920.webp"
+						class="d-block w-100" width="1920" height="888" style="max-width: 100%; height: auto;" 
+						alt="Photo d'un couple qui s'embrasse à leur mariage"
+						loading="lazy"
+						srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1920.webp 1920w,
+							./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1280.webp 1280w,
+							./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-768.webp 768w,
+							./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-480.webp 480w" sizes="100vw">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -66,7 +122,7 @@
 	<section id="about">
 	<!-- Passer cette div en section -->
 		<div class="picture left">
-			<img src="./assets/images/nina.webp" alt="Photo de Nina Carducci">
+			<img src="./assets/images/nina.webp" width="560" height="558" style="max-width: 100%; height: auto;" alt="Photo de Nina Carducci">
 		</div>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
@@ -79,15 +135,15 @@
 		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo au milieu d'une foule devant un concert"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Photo d'un homme en costume qui pose les bras croisés"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Photo d'une femme assise qui sourit"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Photo de deux paires de mains qui se rejoignent"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Portrait d'un homme ayant les yeux fermés"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photo d'un couple marié qui marche en se souriant"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Portrait d'une jeune femme à lunettes"/>
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photo d'un chanteur devant un fond de lumières et de fumée"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photo d'une femme qui sourit assise devant son ordinateur"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" width="440" height="440" loading="lazy" alt="Photo au milieu d'une foule devant un concert"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" width="440" loading="lazy" height="440" alt="Photo d'un homme en costume qui pose les bras croisés"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" width="440" loading="lazy" height="440" alt="Photo d'une femme assise qui sourit"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" width="440" height="440" loading="lazy" alt="Photo de deux paires de mains qui se rejoignent"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" width="440" height="440" loading="lazy" alt="Portrait d'un homme ayant les yeux fermés"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" width="440" height="440" loading="lazy" alt="Photo d'un couple marié qui marche en se souriant"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" width="440" loading="lazy" height="440" alt="Portrait d'une jeune femme à lunettes"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" width="440" height="440" loading="lazy" alt="Photo d'un chanteur devant un fond de lumières et de fumée"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" width="440" height="440" loading="lazy" alt="Photo d'une femme qui sourit assise devant son ordinateur"/>
 			</div>
 		</div>
 		<aside class="quote">
@@ -165,7 +221,8 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="Photo d'un objectif d'appareil photo">
+			<img
+				src="./assets/images/camera.webp" width="460" height="459" loading="lazy" style="max-width: 100%; height: auto;" alt="Photo d'un objectif d'appareil photo">
 		</div>
 	</div>
 </footer>
