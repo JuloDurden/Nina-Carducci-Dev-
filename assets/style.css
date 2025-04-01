@@ -145,6 +145,10 @@ nav a {
 	font-size: 24px;
 }
 
+.visually-hidden {
+	color:#000;
+}
+
 .quote {
 	font-family: 'Spectral';
 	font-style: italic;
